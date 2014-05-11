@@ -23,8 +23,8 @@ legend("topright",
        c("Sub_metering_1","Sub_metering_2", "Sub_metering_3"), 
        col = plot_colors, 
        cex=0.7,
-       lty=c(1,1), 
-       lwd=c(2.5,2.5, 2.5))
+       lty=c(1,1,1)
+       )
 
 dev.copy(png, file = "plot3.png") 
 dev.off()
