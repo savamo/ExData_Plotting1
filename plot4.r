@@ -1,7 +1,7 @@
 par(mfrow = c(2,2))
 
-#df <- read.csv("household_power_consumption.txt", sep=";")
-#df2 <- subset(df, df$Date == "1/2/2007" | df$Date == "2/2/2007")
+df <- read.csv("household_power_consumption.txt", sep=";")
+df2 <- subset(df, df$Date == "1/2/2007" | df$Date == "2/2/2007")
 
 df_fulldate <- data.frame(FullDate = 1:dim(df2)[1])
 df_fulldate[,1] <- as.data.frame(strptime(paste(df2[,'Date'], df2[,'Time'], sep = ' '), "%d/%m/%Y %H:%M:%S"))
