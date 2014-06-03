@@ -2,10 +2,6 @@ png(file = "plot4.png")
 
 par(mfrow = c(2,2))
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 845896acb5e4ac192accc5775bc33a78a57c7bb4
 df <- read.csv("household_power_consumption.txt", sep=";")
 df2 <- subset(df, df$Date == "1/2/2007" | df$Date == "2/2/2007")
 
